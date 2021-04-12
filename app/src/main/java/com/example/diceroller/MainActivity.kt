@@ -10,10 +10,10 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rollButton: Button
-    private lateinit var diceImageView: ImageView
     private lateinit var topText: TextView
+    private lateinit var diceImage: ImageView
     private lateinit var restartButton: Button
+    private lateinit var rollButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         topText = findViewById(R.id.top_text)
         rollButton = findViewById(R.id.roll_button)
-        diceImageView = findViewById(R.id.dice_image)
+        diceImage = findViewById(R.id.dice_image)
         restartButton = findViewById(R.id.restart_button)
 
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     private fun restart() {
         restartButton.setOnClickListener {
             topText.text = ""
-            diceImageView.setImageResource(R.drawable.empty_dice)
+            diceImage.setImageResource(R.drawable.empty_dice)
             rollButton.text = "Roll the dice"
             Toast.makeText(this, "Your dice has been reset", Toast.LENGTH_SHORT).show()
         }
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                 5 -> topText.text = "You rolled 5 !"
                 else -> topText.text = "You rolled 6 !"
             }
-            diceImageView.setImageResource(drawableResource)
+            diceImage.setImageResource(drawableResource)
         }
     }
 }
