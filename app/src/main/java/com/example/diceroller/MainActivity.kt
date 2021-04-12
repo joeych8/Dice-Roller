@@ -27,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         rollDice()
         restart()
-
     }
 
     private fun restart() {
@@ -40,11 +39,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-
         rollButton.text = "Roll the dice"
         rollButton.setOnClickListener {
             rollButton.text = "Roll Again!"
-
 
             val randomInt = Random().nextInt(6) + 1
             val drawableResource = when (randomInt) {
@@ -63,7 +60,6 @@ class MainActivity : AppCompatActivity() {
                 5 -> topText.text = "You rolled 5 !"
                 else -> topText.text = "You rolled 6 !"
             }
-
             diceImageView.setImageResource(drawableResource)
         }
     }
