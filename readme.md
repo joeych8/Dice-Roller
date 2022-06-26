@@ -10,5 +10,9 @@ This app was created for practice purposes during my education.
 
 <img src="readMeImg/Screenshot1.png" width="150"> <img src="readMeImg/Screenshot2.png" width="150"> <img src="readMeImg/Screenshot3.png" width="150">
 
+<!--![](readMeImg/Screenshot1.png) ![](readMeImg/Screenshot2.png) ![](readMeImg/Screenshot3.png) -->
 
-<!--![](readMeImg/Screenshot1.png) ![](readMeImg/Screenshot2.png) ![](readMeImg/Screenshot3.png)
+## Features
+
+- SplashScreen With *postDelayed*
+- Toaster
