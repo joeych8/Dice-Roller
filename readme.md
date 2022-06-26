@@ -15,4 +15,4 @@ This app was created for practice purposes during my education.
 ## Features
 
 - SplashScreen With *postDelayed*
-- Toaster
+- Toast
